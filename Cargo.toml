@@ -22,6 +22,8 @@ ff = { version = "0.14", default-features = false }
 group = { version = "0.14", optional = true, default-features = false }
 pairing = { version = "0.24", optional = true }
 rand_core = { version = "0.10", default-features = false }
+serde = { version = "1.0.217", optional = true, default-features = true }
+serdect = { version = "0.3.0", optional = true, default-features = true }
 subtle = { version = "2.2.1", default-features = false }
 zeroize = { version = "1.4", optional = true, default-features = false }
 
@@ -30,6 +32,7 @@ csv = ">= 1.0, < 1.2" # csv 1.2 has MSRV 1.60
 criterion = "0.3"
 hex-literal = "0.3"
 rand_xorshift = "0.5"
+serde_json = "1.0.137"
 sha2 = "0.10"
 sha3 = "0.10"
 
@@ -41,6 +44,7 @@ pairings = ["groups", "pairing"]
 alloc = ["group/alloc"]
 experimental = ["digest", "groups"]
 nightly = ["subtle/nightly"]
+experimental_serde = ["dep:serde", "serdect"]
 
 [[test]]
 name = "expand_msg"
