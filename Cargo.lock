@@ -53,28 +53,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "bls12_381"
-version = "0.8.0"
-dependencies = [
- "criterion",
- "csv",
- "digest",
- "ff",
- "group",
- "hex-literal",
- "pairing",
- "rand_core",
- "rand_xorshift",
- "serde",
- "serde_json",
- "serdect",
- "sha2",
- "sha3",
- "subtle",
- "zeroize",
-]
-
-[[package]]
 name = "bstr"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -411,6 +389,28 @@ checksum = "0fac9e2da13b5eb447a6ce3d392f23a29d8694bff781bf03a16cd9ac8697593b"
 dependencies = [
  "hermit-abi 0.2.6",
  "libc",
+]
+
+[[package]]
+name = "nym-bls12_381-fork"
+version = "0.8.0-forked"
+dependencies = [
+ "criterion",
+ "csv",
+ "digest",
+ "ff",
+ "group",
+ "hex-literal",
+ "pairing",
+ "rand_core",
+ "rand_xorshift",
+ "serde",
+ "serde_json",
+ "serdect",
+ "sha2",
+ "sha3",
+ "subtle",
+ "zeroize",
 ]
 
 [[package]]
